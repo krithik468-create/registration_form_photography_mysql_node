@@ -15,7 +15,7 @@ if (!(Get-Command pm2 -ErrorAction SilentlyContinue)) {
 }
 
 # 3. Clean up the application directory
-$appPath = "C:\Users\Administrator\my-app"
+$appPath = "C:\Users\Administrator\mod_photograph_node"
 if (Test-Path $appPath) {
     # Remove existing files to ensure a clean slate
     Remove-Item -Path "$appPath\*" -Recurse -Force -ErrorAction SilentlyContinue
